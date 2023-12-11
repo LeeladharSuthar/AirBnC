@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnc</title>
+</head>
+
+<body style="height: 100vh;">
+    <h1>All Listing</h1>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+    <% for(let listItem of listing){ %>
+        <div style="width: 30vw; height: 50vh; border: 1px solid black; margin-top: 1cm; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <img src="<%=listItem.image%>" alt="" width="80%" height="80%" >
+            <h3><%=listItem.title%></h3>
+        </div>
+        <%}%>
+    </div>
+</body>
+
+</html>
